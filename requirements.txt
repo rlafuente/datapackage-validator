@@ -1,1 +1,2 @@
+click
 datapackage-validate==0.3.1
