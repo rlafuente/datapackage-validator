@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(name='datapkg-validator',
       version='0.1',
@@ -9,7 +9,11 @@ setup(name='datapkg-validator',
       author_email='r@manufacturaindependente.org',
       url='http://github.com/rlafuente/datapackage-validator/',
       download_url='https://github.com/rlafuente/datapackage-validator/tarball/master',
-      packages=['datapackage-validator'],
       license="GPL",
       install_requires=['datapackage-validate'],
+      entry_points={
+          "console_scripts": [
+             "validate-dpkg=validate:main",
+          ],
+      },
       )
