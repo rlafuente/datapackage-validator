@@ -14,8 +14,8 @@ Be sure to load the virtualenv before running the script. This is done after ins
 
 After this, to run the script just indicate the location of the data package -- either a `datapackage.json` file or a directory containing one:
 
-    python dpkg-validate.py ~/datasets/cpi
+    validate-dpkg ~/datasets/cpi
     # or pointing to the file itself
-    python dpkg-validate.py ~/datasets/cpi/datapackage.json
+    validate-dpkg ~/datasets/cpi/datapackage.json
 
 If the JSON file is fine, there will be no output. Otherwise, a list with the errors will be printed to standard output.
